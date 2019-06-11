@@ -48,12 +48,6 @@ variable "allowed_security_groups" {
   description = "List of existing Security Groups to be allowed to connect to the DocumentDB cluster"
 }
 
-variable "allowed_security_groups_count" {
-  type        = "string"
-  default     = "2"
-  description = "Count of existing Security Groups to be allowed to connect to the DocumentDB cluster"
-}
-
 variable "allowed_cidr_blocks" {
   type        = "list"
   default     = []
