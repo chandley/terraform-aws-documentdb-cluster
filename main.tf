@@ -41,7 +41,7 @@ resource "aws_security_group_rule" "ingress_security_groups" {
 
 resource "aws_security_group_rule" "ingress_cidr_blocks" {
   type              = "ingress"
-  count             = "${var.enabled == "true" && length(var.allowed_cidr_blocks) > 0 ? 1 : 0}"
+  count             = "${var.enabled == "true" 1 : 0}"
   description       = "Allow inbound traffic from CIDR blocks"
   from_port         = "${var.db_port}"
   to_port           = "${var.db_port}"
